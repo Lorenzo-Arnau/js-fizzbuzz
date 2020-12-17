@@ -4,18 +4,16 @@ var listaNumeri = [];
 // richiamo la lista in html e creo un array che conterrà i numeri
 
 // creo il costrutto for che assegnerà il fizz e buzz in base alla divisibilità e li inserisce in array
-var zero = 0;
-for (var i = 0; i < 100; i++) {
-  zero + i;
-  zero++;
-  if (zero % 3 === 0 && zero % 5 !== 0) {
+
+for (var i = 0; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 !== 0) {
     listaNumeri.push('fizz');
-  }else if (zero % 5 === 0 && zero % 3 !== 0) {
+  }else if (i % 5 === 0 && i % 3 !== 0) {
     listaNumeri.push('buzz');
-  }else if (zero % 3 === 0 && zero % 5 === 0) {
+  }else if (i % 3 === 0 && i % 5 === 0) {
     listaNumeri.push('fizz-buzz');
   }else {
-    listaNumeri.push(zero);
+    listaNumeri.push(i);
   }
 }
 // creo il costrutto for che assegnerà il fizz e buzz in base alla divisibilità e li inserisce in array
