@@ -7,11 +7,11 @@ var listaNumeri = [];
 
 for (var i = 0; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 !== 0) {
-    listaNumeri.push('fizz');
+    listaNumeri.push('Fizz');
   }else if (i % 5 === 0 && i % 3 !== 0) {
-    listaNumeri.push('buzz');
+    listaNumeri.push('Buzz');
   }else if (i % 3 === 0 && i % 5 === 0) {
-    listaNumeri.push('fizz-buzz');
+    listaNumeri.push('Fizz-Buzz');
   }else {
     listaNumeri.push(i);
   }
@@ -20,11 +20,11 @@ for (var i = 0; i <= 100; i++) {
 
 // creo un altro costrutto for che riempa la lista con gli elementi dell'array,assegnando una classe specifica per poter lavorare in css
 for (var i = 0; i < listaNumeri.length; i++) {
-  if (listaNumeri[i] === 'fizz') {
+  if (listaNumeri[i] === 'Fizz') {
     listOutput.innerHTML += '<li class="fizz">'+ listaNumeri[i] + '</li>';
-  }else if (listaNumeri[i] === 'buzz') {
+  }else if (listaNumeri[i] === 'Buzz') {
     listOutput.innerHTML += '<li class="buzz">'+ listaNumeri[i] + '</li>';
-  }else if (listaNumeri[i] === 'fizz-buzz') {
+  }else if (listaNumeri[i] === 'Fizz-Buzz') {
     listOutput.innerHTML += '<li class="fizz-buzz">'+ listaNumeri[i] + '</li>';
   }else {
     listOutput.innerHTML += '<li class="number">'+ listaNumeri[i] + '</li>';
